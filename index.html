@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <style>
+            body{
+              background-color: #F4E185;
+            }
+            .header{
+              position:absolute;
+              top:0%;
+              left:0%;
+              width:100%;
+              height:10%;
+              background-color: #F3950D;
+              text-align: center;
+              border-bottom: 2px solid black;
+            }
+            .header .fas{
+                position: relative;
+                left:5%;
+                bottom:5%;
+                color:black;
+            }
+            .back{
+                position:absolute;
+                left:3%;
+                bottom:20%;
+            }
+            .graph{
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                border-left: 2px solid black;
+                border-bottom: 2px solid black;
+                top:20%;
+                left:10%;
+            }
+            .bar1{
+                position: relative;
+                top:39.6%;
+                left:20%;
+                width:20%;
+                background: linear-gradient(to top, #33ccff 0%, #3c56ff 100%);
+                height:60.4%;
+            }
+            .bar1::after{
+                content: "Alone";
+                position:absolute;
+                top:100%;
+                left:0%;
+
+                
+            }
+            .bar1::before{
+                content:"790";
+                position: absolute;
+                top:-10%;
+                left:0%;
+
+            }
+            .bar2{
+                position: absolute;
+                width:20%;
+                left:60%;
+                background: linear-gradient(to bottom, rgb(48, 63, 230) 0%, rgb(10, 151, 211) 100%);
+                height:39.6%;
+                top:60.4%;
+            }
+            .bar2::before{
+                content:"519";
+                position: absolute;
+                top:-15%;
+                left:0%;
+
+            }
+            .bar2::after{
+                content: "Together";
+                position:absolute;
+                top:100%;
+                left:0%;
+
+                
+            }
+            .footer{
+                position:absolute;
+                bottom:0%;
+                left:0%;
+                width:100%;
+                height:10%;
+                background-color:#F3950D;
+                border-top: 2px solid black;
+            }
+        </style>
+         <meta charset="UTF-8">
+         <script src="https://kit.fontawesome.com/7b0b641d05.js" crossorigin="anonymous"></script>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Bar graph</title>
+    </head>
+    <body>
+        <div class = "header">
+            <h2> Travels alone</h2>
+            <div class ='back'><a style="color:black;text-decoration:none;">
+                <i class="fas fa-caret-left fa-2x"></i> </a>
+            </div>  
+        </div>
+        <div class ="graph">
+            <div class='bar1'>
+                
+            </div>
+            <div class='bar2'>
+                
+            </div>
+        </div>
+        <div class ="footer">
+
+        </div>
+    </body>
+</html>
